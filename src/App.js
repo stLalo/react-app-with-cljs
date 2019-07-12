@@ -4,7 +4,7 @@ import './App.css';
 import { CountClicks, Howdy, Welcome, ShowRandomNumber, PrintDatascript} from 'shadow-cljs/acme.frontend.core';
 
 const DisplayWelcome = Welcome();
-const NewCounter = CountClicks({name: "Howdy"});
+const NewCounter = CountClicks();
 const ShowAlert = Howdy();
 const RandomNumber = ShowRandomNumber();
 const PrintData = PrintDatascript();
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       
       <DisplayWelcome />
-      <NewCounter />
+      <NewCounter title={"Clicks: "}/>
       <ShowAlert />
       <br/>
       <br/>

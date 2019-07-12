@@ -65,14 +65,13 @@
   []
   (r/create-class
    {:reagent-render
-    (fn [props]
+    (fn [{:keys [title]}]
       [:div.custom
-       [:h1 @counter]
-       [:h2 props]
+       [:h1 title @counter]
        [:button {:on-click (fn [] (swap! counter inc))} "Click me"]])}))
 
 (defn ^:export Howdy
-  [props]
+  []
   (r/create-class
    {:reagent-render
     (fn [props]
