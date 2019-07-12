@@ -1,0 +1,14 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/cljs"]
+ :dependencies
+ [[reagent "0.8.1" :exclusions [cljsjs/react cljsjs/react-dom cljsjs/react-dom-server]]
+  [posh "0.5.5"]
+  [com.taoensso/timbre "4.10.0"]
+  [cljs-ajax "0.8.0"]
+  [org.clojure/core.async "0.4.500"]
+  [datascript "0.18.4"]]
+ :dev-http {8080 "public"}
+ :builds
+ {:frontend {:target :browser
+             :modules {:main {:entries [acme.frontend.core]}}}}}
