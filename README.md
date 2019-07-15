@@ -6,8 +6,7 @@ To have shadow-cljs you must do `npm install shadow-cljs --save`. After installa
 To add dependencies, treat `shadow-cljs.edn` as your project.cljs or build.boot file.
 
 ### shared dependencies
-I used ajax.cljs for future HTTP calls such as GET, POST, PUT, and DELETE. Hence, you would like to install the current vertsion of ether for `xmlhttprequest`. 
-
+I used ajax.cljs for future HTTP calls such as GET, POST, PUT, and DELETE. Hence, you would like to install the current version of `ether` for `xmlhttprequest`. You also would like to install `create-react-class` in case it is needed.
 
 ### `npm start`
 
